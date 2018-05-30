@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="55dp"
+
+    tools:context="com.example.thoriq.sekolahkita.ProfilSekolah.HomeFragment">
+
+    <TextView
+        android:id="@+id/tvErrorPres"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="240dp"
+        android:padding="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:background="@drawable/border"
+        android:text="Data Tidak Ditemukan"
+        android:textAlignment="center"/>
+    <ListView
+        android:id="@+id/listprestasiakademik"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/tv1"
+        android:background="#fff"
+        android:layout_height="match_parent"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.thoriq.sekolahkita.CariSemuaSekolah">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:elevation="3dp"
+        android:background="@color/bg_blue"
+        android:minHeight="?attr/actionBarSize"
+        app:navigationIcon="?attr/homeAsUpIndicator"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recySemuaSekolah"
+        android:layout_below="@id/toolbar"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:background="#D3D3D3"
+        android:paddingTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tv1"
+        >
+
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/tvErrorKota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="240dp"
+        android:padding="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:background="@drawable/border"
+        android:text="Data Tidak Ditemukan"
+        android:textAlignment="center"/>
+    <Button
+        android:id="@+id/btnCobaLagi"
+        android:layout_below="@id/tvErrorKota"
+        android:layout_marginRight="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="20dp"
+        android:text="COBA LAGI"
+        android:background="@color/bg_blue"
+        android:textColor="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/tv1"
+        android:background="@drawable/border"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btnPilihStatus"
+            android:layout_alignParentRight="true"
+            android:layout_width="130dp"
+            android:background="@null"
+            android:text="Status"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btnPilihWilayah"
+            android:layout_toRightOf="@+id/btnPilihJenjang"
+            android:layout_toLeftOf="@+id/btnPilihStatus"
+            android:layout_width="120dp"
+            android:background="@null"
+            android:text="CARI KOTA LAIN"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btnPilihJenjang"
+            android:background="@null"
+            android:text="Jenjang"
+            android:gravity="center"
+            android:layout_alignParentLeft="true"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</RelativeLayout>

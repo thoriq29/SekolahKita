@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+
+
+        <TextView
+            android:id="@+id/namaJurusan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/fotoKotaProv"
+            android:text="Jawa Barat"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/akreJurusan"
+            android:textColor="#757575"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/namaJurusan"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="1dp"
+            android:layout_toRightOf="@id/fotoKotaProv"
+            android:text="13.3 Inch, 256 GB"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+        <TextView
+            android:id="@+id/kelasJurusan"
+            android:textColor="#757575"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="1dp"
+            android:paddingRight="20dp"
+            android:layout_alignParentRight="true"
+            android:text="2 Kelas"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+        <TextView
+            android:id="@+id/idJurusan"
+            android:layout_toRightOf="@+id/akreJurusan"
+            android:layout_width="wrap_content"
+            android:textColor="#757575"
+            android:visibility="invisible"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/namaJurusan"
+            android:text="ajsasas"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
+

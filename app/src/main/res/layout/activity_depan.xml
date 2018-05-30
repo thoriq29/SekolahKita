@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_blue"
+    tools:context="com.example.thoriq.sekolahkita.Depan">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:elevation="3dp"
+        android:background="#31709C"
+        android:minHeight="?attr/actionBarSize"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+    </android.support.v7.widget.Toolbar>
+    <android.support.v7.widget.CardView
+        android:layout_width="400dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="70dp"
+        android:layout_height="180dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/btnBerdasarLokasi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="#31709C"
+                android:text="Cari Sekolah BERDASARKAN LOKASI"
+                android:textColor="#fff"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="30dp"/>
+            <Button
+                android:id="@+id/btnSemuaLokasi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnBerdasarLokasi"
+                android:layout_marginLeft="20dp"
+                android:background="#31709C"
+                android:text="CARI SEMUA LOKASI SEKOLAH"
+                android:textColor="#fff"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.thoriq.sekolahkita.Helper.SquareLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/thumNail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:src="@drawable/bannersmk1"
+        android:scaleType="centerCrop"/>
+    <TextView
+        android:id="@+id/judul_foto"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_alignParentBottom="true"
+        android:background="#666666"
+        android:paddingLeft="5dp"
+        android:gravity="center_vertical"
+        android:text="SMK NEGERI 2 SUKABUMI"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+        android:textColor="#fff" />
+</com.example.thoriq.sekolahkita.Helper.SquareLayout>

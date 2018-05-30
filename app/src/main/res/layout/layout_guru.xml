@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="wrap_content"
+        android:background="@drawable/ripple_effect"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_height="230dp"
+        android:layout_margin="2dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/fotoGuru"
+                android:paddingTop="10dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+
+                android:src="@drawable/bannersmk1"
+                android:layout_width="match_parent"
+                android:layout_height="120dp" />
+            <TextView
+                android:id="@+id/idGuru"
+                android:visibility="invisible"
+                android:layout_below="@+id/fotoGuru"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="3dp"
+                android:text="1"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/namaGuru"
+                android:layout_below="@+id/fotoGuru"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="#000000"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:text="Neng Rika Susanti,ST,M.kom"/>
+            <TextView
+                android:id="@+id/guruSekolah"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/namaGuru"
+                android:layout_alignParentBottom="true"
+                android:text="SMK NEGERI 2 SUKABUMI"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

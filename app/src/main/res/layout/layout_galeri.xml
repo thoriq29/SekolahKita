@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="170dp">
+
+            <ImageView
+                android:id="@+id/fotoGaleri"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:clickable="true"
+                android:layout_margin="1dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:src="@drawable/bannersmk1" />
+
+            <TextView
+                android:id="@+id/judul_foto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="#666666"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:layout_margin="1dp"
+                android:gravity="center_vertical"
+                android:text="SMK NEGERI 2 SUKABUMI"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#fff" />
+        </RelativeLayout>
+
+
+</LinearLayout>

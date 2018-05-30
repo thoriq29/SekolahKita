@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/side_nav_bar"
+    android:padding="19dp"
+    android:layout_height="160dp">
+    <ImageView
+        android:id="@+id/fotoSekolahHeader"
+        android:src="@drawable/logosmk2"
+        android:layout_width="70dp"
+        android:layout_marginTop="9dp"
+        android:layout_height="70dp" />
+    <TextView
+        android:id="@+id/namaSekolahHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:text="SMK NEGER 2 SUKABUMI"/>
+    <TextView
+        android:id="@+id/alamatSekolahHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:text="Jl. Pelabuhan II Cipoho, Cikondang"/>
+</LinearLayout>
