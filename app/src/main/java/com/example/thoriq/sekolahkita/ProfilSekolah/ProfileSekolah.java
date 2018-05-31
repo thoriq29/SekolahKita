@@ -53,6 +53,7 @@ public class ProfileSekolah extends AppCompatActivity {
     Fragment fragment = null;
     Class fragmentClass;
     FragmentTransaction tx;
+    String state ="Home";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,6 +66,7 @@ public class ProfileSekolah extends AppCompatActivity {
     {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        toolbar.setTitle("Sekolah Kita");
         id_sekolah = getIntent().getStringExtra("id_sekolah");
         jenjang = getIntent().getStringExtra("jenjang");
         loadDataSekolah();
@@ -81,6 +83,7 @@ public class ProfileSekolah extends AppCompatActivity {
         setupDrawer(navigationView);
         if (jenjang.equals("SMK"))
         {
+
             navigationView.getMenu().clear();
             navigationView.inflateMenu(R.menu.drawer_profile);
 
@@ -108,36 +111,93 @@ public class ProfileSekolah extends AppCompatActivity {
         switch (item.getItemId())
         {
             case R.id.home:
-                fragmentClass =DashbordFragment.class;
-                overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left);
+                if (state.equals("Home"))
+                {
+                    drawerLayout.closeDrawers();
+                    return;
+                }else
+                {
+                    fragmentClass =DashbordFragment.class;
+                    state ="Home";
+                }
                 break;
             case R.id.eskul:
-                fragmentClass = EskulFragment.class;
-                overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left);
+                if (state.equals("Eskul"))
+                {
+                    drawerLayout.closeDrawers();
+                    return;
+                }else
+                {
+                    fragmentClass = EskulFragment.class;
+                    state = "Eskul";
+                }
                 break;
             case R.id.peta:
-                fragmentClass = PetaFragment.class;
-                overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left);
+                if (state.equals("Peta"))
+                {
+                    drawerLayout.closeDrawers();
+                    return;
+                }else
+                {
+                    fragmentClass = PetaFragment.class;
+                    state="Peta";
+                }
                 break;
             case R.id.fasilitas:
-                fragmentClass = FasilitasFragment.class;
-                overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left);
+                if (state.equals("Fasilitas"))
+                {
+                    drawerLayout.closeDrawers();
+                    return;
+                }else
+                {
+                    fragmentClass = FasilitasFragment.class;
+                    state = "Fasilitas";
+                }
                 break;
             case R.id.galeri:
-                fragmentClass = FragmentGaleri.class;
-                overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left);
+                if (state.equals("Galeri"))
+                {
+                    drawerLayout.closeDrawers();
+                    return;
+                }else
+                {
+                    fragmentClass = FragmentGaleri.class;
+                    state =     "Galeri";
+                }
+
                 break;
             case R.id.prestasi:
-                fragmentClass = FragmentPrestasi.class;
-                overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left);
+                if (state.equals("Prestasi"))
+                {
+                    drawerLayout.closeDrawers();
+                    return;
+                }else
+                {
+                    fragmentClass = FragmentPrestasi.class;
+                    state = "Prestasi";
+                }
                 break;
             case R.id.jurusan:
-                fragmentClass = FragmentJurusan.class;
-                overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left);
+                if (state.equals("Jurusan"))
+                {
+                    drawerLayout.closeDrawers();
+                    return;
+                }else
+                {
+                    fragmentClass = FragmentJurusan.class;
+                    state = "Jurusan";
+                }
                 break;
             case R.id.guru:
-                fragmentClass = GuruFragment.class;
-                overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left);
+                if (state.equals("Guru"))
+                {
+                    drawerLayout.closeDrawers();
+                    return;
+                }else
+                {
+                    fragmentClass = GuruFragment.class;
+                    state = "Guru";
+                }
                 break;
             default:
                 fragmentClass = DashbordFragment.class;
